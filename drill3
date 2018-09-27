@@ -1,0 +1,35 @@
+#include "std_lib_facilities.h"
+
+int main() 
+{
+    string letter;
+    cout << "Please enter the name of the person you want to write to.\n"; 
+    string first_name; 
+    cin >> first_name; 
+   
+    letter.append("Dear " + first_name + ",\n");
+    letter.append("How are you? I miss you so much.\n");
+    letter.append("I haven't seen you in a while, what are you up to?\n");
+    
+    cout <<"Enter the name of an another friend.\n";
+    string friend_name;
+    cin >> friend_name;
+    letter.append("Have you seen " + friend_name + " lately?\n");
+    
+    char friend_sex;
+    cout<<"Is "<<friend_name<<" a male or a female(f/m)\n";
+    cin >>friend_sex;
+    //if (friend_sex == "m")
+      //  letter.append("If you see " + friend_name + " please ask him to call me\n");
+     
+    cout<<"How old is "<<first_name"?\n";
+    int age;
+    cin >> age;
+    if (0 >age> 110)
+        simple_error("you're kidding!");
+    letter.append("I hear you just had a birthday and you are " + age + " years old!\n");
+      
+    // cout << letter;
+    return 0; 
+
+}
