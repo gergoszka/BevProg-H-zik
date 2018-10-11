@@ -2,13 +2,32 @@
 
 int main()
 {
-	cout<<"Írj be ket számot: \n";
-	vector<int> szamok={0,0};
-	int szam;
-	while(cin>>szamok[0]>>szamok[1])
+	cout<<"Írj be egy számot: \n";
+	double i=0, szam, small, large;
+	while(cin>>szam)
 	{
+		if(i==0)
+		{
+		  cout<<"Első szám: "<<szam<<"\n";
+		  small=szam;
+		}
+		else
 
-		  cout<<szamok[0]<<" "<<szamok[1]<<"\n";
+		if (szam<small)
+		{
+		  small=szam;
+		  cout<<"A legkisebb szám eddig: "<<szam<<"\n";    
+		}	
+		else
+
+		if (szam>large)
+		{
+		  large=szam;
+		  cout<<"A legnyagyobb szám eddig: "<<szam<<"\n";    
+		}		
+
+		++i;
+
 	}
 
 }
