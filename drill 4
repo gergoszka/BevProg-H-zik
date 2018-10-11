@@ -1,0 +1,14 @@
+#include "std_lib_facilities.h"
+
+int main()
+{
+	cout<<"Írj be ket számot: \n";
+	vector<int> szamok={0,0};
+	int szam;
+	while(cin>>szamok[0]>>szamok[1])
+	{
+
+		  cout<<szamok[0]<<" "<<szamok[1]<<"\n";
+	}
+
+}
